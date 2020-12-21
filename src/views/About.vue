@@ -1,19 +1,18 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
-    <h3>{{ message }}</h3>
-    <button @click="addMessageAction">點我測試</button>
+    <h1>Management side</h1>
+    <Messages certification="true" />
   </div>
 </template>
+
 <script>
-import { mapActions, mapState } from "vuex";
+// @ is an alias to /src
+import Messages from "@/components/Messages.vue";
 
 export default {
-  methods: {
-    ...mapActions(["addMessageAction"])
+  name: "About",
+  components: {
+    Messages,
   },
-  computed: {
-    ...mapState(["message"])
-  }
 };
 </script>

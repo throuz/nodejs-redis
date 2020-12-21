@@ -11,6 +11,7 @@
     },
     "include": [
         "src/**/*.vue",
-        "src/**/*.js"
+        "src/**/*.js",
+        "server.js"
     ]
 }
